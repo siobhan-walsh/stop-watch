@@ -1,0 +1,30 @@
+.time-display {
+  font-size: 6em;
+}
+
+.stop-button,
+.reset-button {
+  padding: 8px;
+  border: none;
+  border-radius: 2px;
+  margin: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  color: white;
+}
+
+.stop-button:focus,
+.reset-button:focus {
+  outline: 0;
+}
+
+.reset-button {
+  background: #6200EE;
+}
+
+.stop-button:not([data-stopped="true"]) {
+  background: #C51162;
+}
+
+.stop-button[data-stopped="true"] {
+  background: #03DAC6;
+}
